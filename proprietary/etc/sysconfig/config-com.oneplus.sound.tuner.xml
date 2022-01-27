@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <hidden-api-whitelisted-app package="com.oneplus.sound.tuner"/>
+    <hidden-api-whitelisted-app package="com.oneplus.sound.tuner.basiccolorwhite.overlay"/>
+    <hidden-api-whitelisted-app package="com.oneplus.sound.tuner.basiccolorblack.overlay"/>
+    <allow-in-power-save package="com.oneplus.sound.tuner"/>
+</config>
+
