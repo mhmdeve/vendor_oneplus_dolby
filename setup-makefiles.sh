@@ -8,8 +8,8 @@
 
 set -e
 
-DEVICE=common
-VENDOR=xiaomi/dolby
+DEVICE=dolby
+VENDOR=oneplus
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -30,8 +30,8 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" true
 # Warning headers and guards
 write_headers "arm64"
 sed -i 's|TARGET_DEVICE|TARGET_ARCH|g' "${ANDROIDMK}"
-sed -i 's|vendor/xiaomi/dolby/|vendor/xiaomi/dolby/common|g' "${PRODUCTMK}"
-sed -i 's|device/xiaomi/dolby//setup-makefiles.sh|vendor/xiaomi/dolby/setup-makefiles.sh|g' "${ANDROIDBP}" "${ANDROIDMK}" "${BOARDMK}" "${PRODUCTMK}"
+sed -i 's|vendor/oneplus/dolby/|vendor/oneplus/dolby|g' "${PRODUCTMK}"
+sed -i 's|device/oneplus/dolby//setup-makefiles.sh|vendor/oneplus/dolby/setup-makefiles.sh|g' "${ANDROIDBP}" "${ANDROIDMK}" "${BOARDMK}" "${PRODUCTMK}"
 
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 

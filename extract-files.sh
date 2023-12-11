@@ -8,8 +8,8 @@
 
 set -e
 
-DEVICE=common
-VENDOR=xiaomi/dolby
+DEVICE=dolby
+VENDOR=oneplus
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
